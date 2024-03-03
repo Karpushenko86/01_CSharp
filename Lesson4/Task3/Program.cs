@@ -1,4 +1,4 @@
-﻿string GetLettersFromString(string s)
+﻿static string GetLettersFromString(string? s)
 {
     string letters = "";
     foreach(char e in s)
@@ -12,6 +12,6 @@
     return letters;
 }
 
-string str = Console.ReadLine();
+string? str = Console.ReadLine();
 string result = GetLettersFromString(str);
 Console.WriteLine(result);
